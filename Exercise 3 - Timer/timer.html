@@ -9,11 +9,26 @@
 
     <h2>Exercise 3 - Timer</h2>
 
-    <div id="myTimer">
-        Your timer should go here!
+    <div id="myTimer" class="mt-[140px] flex flex-col gap-6 bg-white text-black">
+        <div class="w-fit m-auto">
+            <div class="flex gap-6 items-center">
+                <div class="border border-black bg-[#D9D9D9] px-[30px] h-fit cursor-pointer" id="increase">+</div>
+                <div class="px-[70px] py-[20px] bg-[#C5E0B4]">0s</div>
+                <div class="border border-black bg-[#D9D9D9] px-[30px] h-fit cursor-pointer" id="reduce">-</div>
+            </div>
+            <div class="flex w-full justify-between mt-[20px] text-lg">
+                <div class="px-[40px] bg-[#D9D9D9] py-[5px] cursor-pointer border border-black" id="reset">Reset</div>
+                <div class="px-[40px] bg-[#D9D9D9] py-[5px] cursor-pointer border border-black" id="start">Start</div>
+            </div>
+        </div>
+        <div class="w-[30vw] mx-auto flex"> 
+            <input type="text" class="border border-gray-400 outline-0 bg-white px-4 mx-auto text-base rounded-[5px]" id="input" placeholder="Enter seconds to count">
+            <button class="w-fit px-2 bg-[#C5E0B4] font-bold text-sm rounded-[5px]" id="submit">Submit</button>
+        </div>
     </div>
 
     <script src="./timer.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </body>
 
